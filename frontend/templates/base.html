@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
     <title>{% block title %}Duggu Optix{% endblock %}</title>
 
+    <!-- Website Description -->
+    <meta name="description" content="Duggu Optix - Premium Eyeglasses, Sunglasses and Contact Lenses">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- CSS -->
-    <link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Favicon (Add later) -->
+    <!-- <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}"> -->
+
 </head>
+
 <body>
 
+    <!-- =========================
+         NAVBAR
+    ========================== -->
     {% include 'components/navbar.html' %}
 
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
     <main>
+
         {% block content %}
         {% endblock %}
+
     </main>
 
+    <!-- =========================
+         FOOTER
+    ========================== -->
     {% include 'components/footer.html' %}
 
     <!-- JavaScript -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
+
 </html>
