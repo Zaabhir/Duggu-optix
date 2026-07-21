@@ -56,4 +56,86 @@ Home | Duggu Optix
     </div>
 
 </section>
+
+<!-- ===========================
+     Featured Products
+=========================== -->
+
+<section class="featured-products">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-container">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+
+            <span class="badge">20% OFF</span>
+
+            <img src="{{ url_for('static', filename='images/eyeglasses.jpg') }}"
+     alt="Eyeglasses">
+
+            <h3>Classic Eyeglasses</h3>
+
+            <p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+
+            <p class="price">
+                ₹2,499
+                <span>₹3,099</span>
+            </p>
+
+            <button class="cart-btn">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+
+            <span class="badge">15% OFF</span>
+
+            <img src="{{ url_for('static', filename='images/sunglasses.jpg') }}"
+     alt="Sunglasses">
+            <h3>Premium Sunglasses</h3>
+
+            <p class="rating">⭐⭐⭐⭐☆ (4.5)</p>
+
+            <p class="price">
+                ₹3,299
+                <span>₹3,899</span>
+            </p>
+
+            <button class="cart-btn">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+
+            <span class="badge">10% OFF</span>
+
+            <img src="{{ url_for('static', filename='images/contact-lens.jpg') }}"
+     alt="Contact Lens">
+
+            <h3>Contact Lens</h3>
+
+            <p class="rating">⭐⭐⭐⭐⭐ (5.0)</p>
+
+            <p class="price">
+                ₹1,499
+                <span>₹1,699</span>
+            </p>
+
+            <button class="cart-btn">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
 {% endblock %}
